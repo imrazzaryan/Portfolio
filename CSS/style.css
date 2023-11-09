@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+/* .navbar{
+} */
+
+/* ################# UTILITY CLASSES ################### */
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+
+/* ##################### NAVBAR ########################### */
+.navbar {
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    height: 5.3rem;
+    background: #fff;
+    color: #000;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+/* .navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+} */
+
+.menu-items {
+    display: flex;
+    justify-content: right;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-top: 1.3rem;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+    color: #117964;
+    border: 2px solid #fff;
+}
+
+/* ################# ShowCase Area ###################### */
+
+.showcase-area {
+    height: 55vh;
+    background: url('https://wallpaperaccess.com/full/5651990.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textarea {
+    color: white;
+}
+
+.head {
+    text-align: center;
+}
+
+.head h1 {
+    font-size: 3rem;
+}
+
+.head p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* ############### About Me ################# */
+
+#ABOUT {
+    padding: 50px 0px;
+    background: #f5f5f7;
+}
+
+.about-me {
+    /* border: 4px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ABOUT h1 {
+    font-size: 4rem;
+}
+
+#ABOUT h2 {
+    font-size: 3rem;
+}
+
+#ABOUT p {
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    color: #555;
+}
+
+#ABOUT .small {
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.about-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translateX(-100%);
+    animation: moving-text 1s ease-in-out forwards;
+}
+
+@keyframes moving-text {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-img {
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translateX(100%);
+    animation: moving-img 1s ease-in-out forwards;
+    mix-blend-mode: multiply;
+}
+
+@keyframes moving-img {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+/* ################ Skills #################### */
+
+.skill-section {
+    padding: 50px 0px;
+    background: #f5f5f7;
+}
+
+.my-skills {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+
+#SKILLS h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.web-d ul li {
+    margin: auto;
+    font-size: 3rem;
+    color: #555;
+    transform: translateX(-100%);
+    animation: moving-web 1s ease-in-out forwards;
+}
+
+@keyframes moving-web {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.languages ul li {
+    margin: auto;
+    font-size: 3rem;
+    color: #555;
+    transform: translateX(100%);
+    animation: moving-language 1s ease-in-out forwards;
+}
+
+@keyframes moving-language {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.web-d h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.languages h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+/* ###################### Project #################### */
+
+.project-section {
+    padding: 50px 0px;
+    background: #f5f5f7;
+}
+
+#PROJECT h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.minor-projects h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.major-projects h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.minor-projects ul li {
+    font-size: 3rem;
+    color: #555;
+    letter-spacing: 2px;
+    transform: translateX(-100%);
+    animation: moving-minor 1s ease-in-out forwards;
+}
+
+@keyframes moving-minor {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.major-projects ul li {
+    font-size: 3rem;
+    color: #555;
+    letter-spacing: 1px;
+    transform: translateX(100%);
+    animation: moving-major 1s ease-in-out forwards;
+}
+
+@keyframes moving-major {
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* ################### Contact US ################ */
+
+.form-container {
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+.form-container input,
+.form-container textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.form-container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.form-container a {
+    font-size: 1.3rem;
+}
+
+.btn {
+    background-color: #0000ff63;
+    color: black;
+    font-weight: 600;
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 100px;
+    outline: none;
+    margin-top: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid rgba(21, 107, 21, 0.582);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    color: black;
+    font-weight: 600;
+    transform: scale(1.1);
+    background-color: rgba(0, 128, 0, 0.473);
+}
